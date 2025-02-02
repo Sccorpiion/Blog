@@ -1,0 +1,13 @@
+{% extends 'todo_list/base.html' %}
+
+{% block title %}
+    ToDo List App
+{% endblock %}
+
+{% block body %}
+    <a href="{% url 'todo_list:done' %}">Done</a>
+
+    <h1>ToDo List App</h1>
+    <h2>ToDos:</h2>
+    {% include 'todo_list/components/todoitem_list.html' %}
+{% endblock %}
